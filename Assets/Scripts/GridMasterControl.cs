@@ -51,6 +51,11 @@ public class GridMasterControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if (_GAMEOVER)
         {
             if (Input.GetKeyDown(KeyCode.Space))
